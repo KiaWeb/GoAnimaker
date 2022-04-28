@@ -1,0 +1,254 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.8.0
+2 info using node@v18.0.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/root/proj/wrapper/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 16ms
+11 timing config:load:file:/root/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 23ms
+19 timing npm:load:configload Completed in 24ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm install
+23 verbose argv "install"
+24 timing npm:load:setTitle Completed in 1ms
+25 timing config:load:flatten Completed in 3ms
+26 timing npm:load:display Completed in 4ms
+27 verbose logfile logs-max:10 dir:/root/.npm/_logs
+28 verbose logfile /root/.npm/_logs/2022-04-28T15_08_40_265Z-debug-0.log
+29 timing npm:load:logFile Completed in 4ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 36ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 46ms
+36 timing idealTree:userRequests Completed in 1ms
+37 silly idealTree buildDeps
+38 timing idealTree:#root Completed in 1ms
+39 silly fetch manifest register-scheme@github:devsnek/node-register-scheme
+40 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+41 silly placeDep ROOT register-scheme@0.0.2 OK for: discord-rpc@3.2.0 want: github:devsnek/node-register-scheme
+42 silly fetch manifest bindings@^1.3.0
+43 silly fetch manifest node-addon-api@^1.3.0
+44 http fetch GET 200 https://registry.npmjs.org/node-addon-api 5226ms (cache miss)
+45 http fetch GET 200 https://registry.npmjs.org/bindings 5232ms (cache miss)
+46 timing idealTree:node_modules/discord-rpc Completed in 17321ms
+47 silly placeDep ROOT bindings@1.5.0 OK for: register-scheme@0.0.2 want: ^1.3.0
+48 silly placeDep ROOT node-addon-api@1.7.2 OK for: register-scheme@0.0.2 want: ^1.3.0
+49 silly fetch manifest file-uri-to-path@1.0.0
+50 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path 40ms (cache miss)
+51 timing idealTree:node_modules/register-scheme Completed in 47ms
+52 silly placeDep ROOT file-uri-to-path@1.0.0 OK for: bindings@1.5.0 want: 1.0.0
+53 timing idealTree:node_modules/bindings Completed in 4ms
+54 timing idealTree:node_modules/file-uri-to-path Completed in 0ms
+55 timing idealTree:node_modules/node-addon-api Completed in 0ms
+56 timing idealTree:buildDeps Completed in 17374ms
+57 timing idealTree:fixDepFlags Completed in 1ms
+58 timing idealTree Completed in 17424ms
+59 timing reify:loadTrees Completed in 17425ms
+60 timing reify:diffTrees Completed in 3ms
+61 silly reify moves {}
+62 timing reify:retireShallow Completed in 1ms
+63 timing reify:createSparse Completed in 2ms
+64 timing reify:loadBundles Completed in 0ms
+65 silly audit bulk request {
+65 silly audit   'audio-converter': [ '1.0.13' ],
+65 silly audit   'balanced-match': [ '1.0.0' ],
+65 silly audit   'base64-js': [ '1.3.1' ],
+65 silly audit   bluebird: [ '3.7.2' ],
+65 silly audit   'bluebird-co': [ '2.2.0' ],
+65 silly audit   'brace-expansion': [ '1.1.11' ],
+65 silly audit   brotli: [ '1.3.2' ],
+65 silly audit   charm: [ '0.1.2' ],
+65 silly audit   commander: [ '2.20.3' ],
+65 silly audit   'concat-map': [ '0.0.1' ],
+65 silly audit   'discord-rpc': [ '3.2.0' ],
+65 silly audit   eta: [ '1.12.3' ],
+65 silly audit   formidable: [ '1.2.2' ],
+65 silly audit   fs: [ '0.0.1-security' ],
+65 silly audit   glob: [ '5.0.15' ],
+65 silly audit   inflight: [ '1.0.6' ],
+65 silly audit   inherits: [ '2.0.4' ],
+65 silly audit   'js-base64': [ '3.6.1' ],
+65 silly audit   'js-md5': [ '0.7.3' ],
+65 silly audit   'lodash.chunk': [ '4.2.0' ],
+65 silly audit   'lodash.uniq': [ '4.5.0' ],
+65 silly audit   minimatch: [ '3.0.4' ],
+65 silly audit   minimist: [ '1.2.5' ],
+65 silly audit   mkdirp: [ '0.5.5' ],
+65 silly audit   'mp3-duration': [ '1.1.0' ],
+65 silly audit   'node-fetch': [ '2.6.1' ],
+65 silly audit   'node-stream-zip': [ '1.13.5' ],
+65 silly audit   'node-zip': [ '1.0.0' ],
+65 silly audit   once: [ '1.4.0' ],
+65 silly audit   pace: [ '0.0.4' ],
+65 silly audit   'path-is-absolute': [ '1.0.1' ],
+65 silly audit   q: [ '1.5.1' ],
+65 silly audit   sax: [ '1.2.4' ],
+65 silly audit   wrappy: [ '1.0.2' ],
+65 silly audit   ws: [ '7.5.0' ],
+65 silly audit   xmldoc: [ '1.1.2' ],
+65 silly audit   'register-scheme': [ '0.0.2' ],
+65 silly audit   bindings: [ '1.5.0' ],
+65 silly audit   'node-addon-api': [ '1.7.2' ],
+65 silly audit   'file-uri-to-path': [ '1.0.0' ]
+65 silly audit }
+66 silly tarball no local data for file-uri-to-path@https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz. Extracting by manifest.
+67 silly tarball no local data for bindings@https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz. Extracting by manifest.
+68 silly tarball no local data for node-addon-api@https://registry.npmjs.org/node-addon-api/-/node-addon-api-1.7.2.tgz. Extracting by manifest.
+69 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 69ms (cache miss)
+70 timing reifyNode:node_modules/file-uri-to-path Completed in 80ms
+71 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 104ms
+72 timing auditReport:getReport Completed in 107ms
+73 silly audit report {
+73 silly audit report   'node-fetch': [
+73 silly audit report     {
+73 silly audit report       id: 1070022,
+73 silly audit report       url: 'https://github.com/advisories/GHSA-r683-j2x4-v87g',
+73 silly audit report       title: 'node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor',
+73 silly audit report       severity: 'high',
+73 silly audit report       vulnerable_versions: '<2.6.7',
+73 silly audit report       cwe: [Array],
+73 silly audit report       cvss: [Object]
+73 silly audit report     }
+73 silly audit report   ],
+73 silly audit report   minimist: [
+73 silly audit report     {
+73 silly audit report       id: 1067342,
+73 silly audit report       url: 'https://github.com/advisories/GHSA-xvch-5gv4-984h',
+73 silly audit report       title: 'Prototype Pollution in minimist',
+73 silly audit report       severity: 'critical',
+73 silly audit report       vulnerable_versions: '<1.2.6',
+73 silly audit report       cwe: [Array],
+73 silly audit report       cvss: [Object]
+73 silly audit report     }
+73 silly audit report   ]
+73 silly audit report }
+74 timing metavuln:cache:get:security-advisory:node-fetch:4JIQ82DNHmDwHBivjr2cTA6fRmCHOQEo+nuHG4JkNBmQczWOm00xvqFx/ffCUbBgxNGFe53jRVsOd2ZEbCxEEw== Completed in 7ms
+75 timing metavuln:cache:get:security-advisory:minimist:nZkhUdPEpKwzIx1nekYW4B7BHQyF2nm6J0JsgeP2HfA0DRMT5hhByRU71A4RPgtBbQPYEzVBozv8/mBZCafaGw== Completed in 6ms
+76 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz 113ms (cache miss)
+77 timing reifyNode:node_modules/bindings Completed in 130ms
+78 http fetch GET 200 https://registry.npmjs.org/node-fetch 64ms (cache miss)
+79 timing metavuln:packument:node-fetch Completed in 67ms
+80 timing metavuln:load:security-advisory:node-fetch:1070022 Completed in 6ms
+81 http fetch GET 200 https://registry.npmjs.org/minimist 80ms (cache revalidated)
+82 timing metavuln:packument:minimist Completed in 81ms
+83 timing metavuln:load:security-advisory:minimist:1067342 Completed in 2ms
+84 timing metavuln:cache:put:security-advisory:node-fetch:4JIQ82DNHmDwHBivjr2cTA6fRmCHOQEo+nuHG4JkNBmQczWOm00xvqFx/ffCUbBgxNGFe53jRVsOd2ZEbCxEEw== Completed in 16ms
+85 timing metavuln:calculate:security-advisory:node-fetch:1070022 Completed in 90ms
+86 timing metavuln:cache:put:security-advisory:minimist:nZkhUdPEpKwzIx1nekYW4B7BHQyF2nm6J0JsgeP2HfA0DRMT5hhByRU71A4RPgtBbQPYEzVBozv8/mBZCafaGw== Completed in 10ms
+87 timing metavuln:calculate:security-advisory:minimist:1067342 Completed in 93ms
+88 timing metavuln:cache:get:security-advisory:discord-rpc:tGxJcT1E+xC/z/DBMJGFlvTWxxlbPLfxwcSgvbBcQLOvRHkcPxJQNh5nfLEcyCWajTcQKKp6yQQYIg5n5c4IIw== Completed in 2ms
+89 http fetch GET 200 https://registry.npmjs.org/node-addon-api/-/node-addon-api-1.7.2.tgz 197ms (cache miss)
+90 timing reifyNode:node_modules/node-addon-api Completed in 221ms
+91 http fetch GET 200 https://registry.npmjs.org/discord-rpc 182ms (cache miss)
+92 timing metavuln:packument:discord-rpc Completed in 182ms
+93 timing metavuln:load:security-advisory:discord-rpc:4JIQ82DNHmDwHBivjr2cTA6fRmCHOQEo+nuHG4JkNBmQczWOm00xvqFx/ffCUbBgxNGFe53jRVsOd2ZEbCxEEw== Completed in 9ms
+94 timing metavuln:cache:put:security-advisory:discord-rpc:tGxJcT1E+xC/z/DBMJGFlvTWxxlbPLfxwcSgvbBcQLOvRHkcPxJQNh5nfLEcyCWajTcQKKp6yQQYIg5n5c4IIw== Completed in 4ms
+95 timing metavuln:calculate:security-advisory:discord-rpc:4JIQ82DNHmDwHBivjr2cTA6fRmCHOQEo+nuHG4JkNBmQczWOm00xvqFx/ffCUbBgxNGFe53jRVsOd2ZEbCxEEw== Completed in 195ms
+96 timing metavuln:cache:get:security-advisory:mkdirp:CE+8U4ZPtjiJPdI/iyhBm/J/6iJ6W46YsdmRUqqyg6mDC09+mfWZqqAHYSzlnfbGA992zvUCP+SrVPVrG01dvA== Completed in 0ms
+97 http fetch GET 200 https://registry.npmjs.org/mkdirp 42ms (cache revalidated)
+98 timing metavuln:packument:mkdirp Completed in 43ms
+99 timing metavuln:load:security-advisory:mkdirp:nZkhUdPEpKwzIx1nekYW4B7BHQyF2nm6J0JsgeP2HfA0DRMT5hhByRU71A4RPgtBbQPYEzVBozv8/mBZCafaGw== Completed in 3ms
+100 timing metavuln:cache:put:security-advisory:mkdirp:CE+8U4ZPtjiJPdI/iyhBm/J/6iJ6W46YsdmRUqqyg6mDC09+mfWZqqAHYSzlnfbGA992zvUCP+SrVPVrG01dvA== Completed in 2ms
+101 timing metavuln:calculate:security-advisory:mkdirp:nZkhUdPEpKwzIx1nekYW4B7BHQyF2nm6J0JsgeP2HfA0DRMT5hhByRU71A4RPgtBbQPYEzVBozv8/mBZCafaGw== Completed in 48ms
+102 timing auditReport:init Completed in 340ms
+103 timing reify:audit Completed in 448ms
+104 http fetch GET 200 https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17 5304ms (cache miss)
+105 timing reify:rollback:createSparse Completed in 14ms
+106 timing reify:rollback:retireShallow Completed in 0ms
+107 timing command:install Completed in 32269ms
+108 verbose stack Error: git dep preparation failed
+108 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:63:27)
+108 verbose stack     at ChildProcess.emit (node:events:527:28)
+108 verbose stack     at maybeClose (node:internal/child_process:1090:16)
+108 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:302:5)
+109 verbose cwd /root/proj/wrapper
+110 verbose Linux 5.4.0
+111 verbose node v18.0.0
+112 verbose npm  v8.8.0
+113 error code 1
+114 error git dep preparation failed
+115 error command /usr/bin/node /usr/lib/node_modules/npm/bin/npm-cli.js install --force --cache=/root/.npm --prefer-offline=false --prefer-online=false --offline=false --no-progress --no-save --no-audit --include=dev --include=peer --include=optional --no-package-lock-only --no-dry-run
+116 error > register-scheme@0.0.2 install
+116 error > node-gyp rebuild
+116 error
+116 error make: Entering directory '/root/.npm/_cacache/tmp/git-cloneLrjBpq/build'
+116 error   CC(target) Release/obj.target/nothing/node_modules/node-addon-api/src/nothing.o
+116 error make: Leaving directory '/root/.npm/_cacache/tmp/git-cloneLrjBpq/build'
+117 error npm WARN using --force Recommended protections disabled.
+117 error gyp info it worked if it ends with ok
+117 error gyp info using node-gyp@9.0.0
+117 error gyp info using node@18.0.0 | linux | x64
+117 error gyp info find Python using Python version 3.8.10 found at "/usr/bin/python3"
+117 error gyp http GET https://nodejs.org/download/release/v18.0.0/node-v18.0.0-headers.tar.gz
+117 error gyp http 200 https://nodejs.org/download/release/v18.0.0/node-v18.0.0-headers.tar.gz
+117 error gyp http GET https://nodejs.org/download/release/v18.0.0/SHASUMS256.txt
+117 error gyp http 200 https://nodejs.org/download/release/v18.0.0/SHASUMS256.txt
+117 error gyp info spawn /usr/bin/python3
+117 error gyp info spawn args [
+117 error gyp info spawn args   '/usr/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+117 error gyp info spawn args   'binding.gyp',
+117 error gyp info spawn args   '-f',
+117 error gyp info spawn args   'make',
+117 error gyp info spawn args   '-I',
+117 error gyp info spawn args   '/root/.npm/_cacache/tmp/git-cloneLrjBpq/build/config.gypi',
+117 error gyp info spawn args   '-I',
+117 error gyp info spawn args   '/usr/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+117 error gyp info spawn args   '-I',
+117 error gyp info spawn args   '/root/.cache/node-gyp/18.0.0/include/node/common.gypi',
+117 error gyp info spawn args   '-Dlibrary=shared_library',
+117 error gyp info spawn args   '-Dvisibility=default',
+117 error gyp info spawn args   '-Dnode_root_dir=/root/.cache/node-gyp/18.0.0',
+117 error gyp info spawn args   '-Dnode_gyp_dir=/usr/lib/node_modules/npm/node_modules/node-gyp',
+117 error gyp info spawn args   '-Dnode_lib_file=/root/.cache/node-gyp/18.0.0/<(target_arch)/node.lib',
+117 error gyp info spawn args   '-Dmodule_root_dir=/root/.npm/_cacache/tmp/git-cloneLrjBpq',
+117 error gyp info spawn args   '-Dnode_engine=v8',
+117 error gyp info spawn args   '--depth=.',
+117 error gyp info spawn args   '--no-parallel',
+117 error gyp info spawn args   '--generator-output',
+117 error gyp info spawn args   'build',
+117 error gyp info spawn args   '-Goutput_dir=.'
+117 error gyp info spawn args ]
+117 error gyp info spawn make
+117 error gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+117 error make: cc: Command not found
+117 error make: *** [node_modules/node-addon-api/src/nothing.target.mk:109: Release/obj.target/nothing/node_modules/node-addon-api/src/nothing.o] Error 127
+117 error gyp ERR! build error 
+117 error gyp ERR! stack Error: `make` failed with exit code: 2
+117 error gyp ERR! stack     at ChildProcess.onExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:194:23)
+117 error gyp ERR! stack     at ChildProcess.emit (node:events:527:28)
+117 error gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+117 error gyp ERR! System Linux 5.4.0
+117 error gyp ERR! command "/usr/bin/node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+117 error gyp ERR! cwd /root/.npm/_cacache/tmp/git-cloneLrjBpq
+117 error gyp ERR! node -v v18.0.0
+117 error gyp ERR! node-gyp -v v9.0.0
+117 error gyp ERR! not ok 
+117 error npm ERR! code 1
+117 error npm ERR! path /root/.npm/_cacache/tmp/git-cloneLrjBpq
+117 error npm ERR! command failed
+117 error npm ERR! command sh -c node-gyp rebuild
+117 error
+117 error npm ERR! A complete log of this run can be found in:
+117 error npm ERR!     /root/.npm/_logs/2022-04-28T15_09_03_616Z-debug-0.log
+118 verbose exit 1
+119 timing npm Completed in 32367ms
+120 verbose unfinished npm timer reify 1651158520359
+121 verbose unfinished npm timer reify:unpack 1651158537806
+122 verbose unfinished npm timer reifyNode:node_modules/register-scheme 1651158537807
+123 verbose code 1
+124 error A complete log of this run can be found in:
+124 error     /root/.npm/_logs/2022-04-28T15_08_40_265Z-debug-0.log
