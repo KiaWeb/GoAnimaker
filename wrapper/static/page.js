@@ -19,9 +19,9 @@ module.exports = function (req, res, url) {
 	const query = url.query;
 
 	// parse urls for the lvm
-	const SWF_URL = process.env.SWF_URL.replace("127.0.0.1", "localhost");
-	const STORE_URL = process.env.STORE_URL.replace("127.0.0.1", "localhost");
-	const CLIENT_URL = process.env.CLIENT_URL.replace("127.0.0.1", "localhost");
+	const SWF_URL = process.env.SWF_URL.replace("127.0.0.1", "194.195.86.188");
+	const STORE_URL = process.env.STORE_URL.replace("127.0.0.1", "194.195.86.188");
+	const CLIENT_URL = process.env.CLIENT_URL.replace("127.0.0.1", "194.195.86.188");
 	var attrs, params, title, filename;
 	switch (url.pathname) {
 		case "/cc": {
@@ -54,7 +54,7 @@ module.exports = function (req, res, url) {
 					"clientThemePath": CLIENT_URL + "/<client_theme>"
 				},
 				allowScriptAccess: "always",
-				movie: SWF_URL + "/cc.swf", // "http://localhost/cc.swf"
+				movie: SWF_URL + "/cc.swf", // "http://194.195.86.188/cc.swf"
 			};
 			break;
 		}
@@ -91,12 +91,12 @@ module.exports = function (req, res, url) {
 					lid: 13,
 				},
 				allowScriptAccess: "always",
-				movie: SWF_URL + "/cc_browser.swf", // 'http://localhost/cc_browser.swf'
+				movie: SWF_URL + "/cc_browser.swf", // 'http://194.195.86.188/cc_browser.swf'
 			};
 			break;
 		}
 
-		case "/go_full": {
+		case "/videomaker": {
 			title = "Video Editor";
 			filename = "studio";
 			attrs = {
@@ -119,7 +119,7 @@ module.exports = function (req, res, url) {
 					tray: "custom",
 					tlang: "en_US",
 					ut: 60,
-					apiserver: "http://localhost:4343/",
+					apiserver: "http://194.195.86.188:80/",
 					storePath: STORE_URL + "/<store>",
 					clientThemePath: CLIENT_URL + "/<client_theme>",
 				},

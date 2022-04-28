@@ -91,7 +91,7 @@
 		}
 	},
 	"pages": {
-		"/go_full": "",
+		"/videomaker": "",
 		"/cc": "<script>function characterSaved(){window.location='pages/html/list.html'}</script>"
 	}
 }
